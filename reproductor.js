@@ -67,7 +67,7 @@ function cargarCancion(sentido){
 
   reproductor.deslizador['progresoCancion'].value = 0;
 
-  setTimeout( () => cambiarCancion(), 200);
+  setTimeout( () => cambiarCancion(), 1000);
 }
 
 function cambiarCancion(){
@@ -138,25 +138,4 @@ function moverVolumen(e){
   else if(volumen <= 50) iconoVolumen.className = icono['volumenBajo'];
   else iconoVolumen.className = icono['volumenAlto'];
 }
-document.addEventListener("DOMContentLoaded", function () {
-  const openGalleryButton = document.getElementById("openGallery");
-  const closeGalleryButton = document.getElementById("closeGallery");
-  const photoGallery = document.getElementById("photoGallery");
 
-  // Abrir la galería
-  openGalleryButton.addEventListener("click", () => {
-    photoGallery.style.display = "block";
-  });
-
-  // Cerrar la galería
-  closeGalleryButton.addEventListener("click", () => {
-    photoGallery.style.display = "none";
-  });
-
-  // Cerrar la galería haciendo clic fuera del contenido
-  photoGallery.addEventListener("click", (event) => {
-    if (event.target === photoGallery) {
-      photoGallery.style.display = "none";
-    }
-  });
-});
