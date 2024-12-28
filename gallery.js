@@ -29,3 +29,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+if ('mediaSession' in navigator) {
+    navigator.mediaSession.metadata = new MediaMetadata({
+        title: 'Título de la canción',
+        artist: 'Artista',
+        album: 'Álbum',
+        artwork: [
+            { src: 'Sin título-1.png', sizes: '192x192', type: 'image/png' },
+            { src: 'Sin título-1.png', sizes: '512x512', type: 'image/png' }
+        ]
+    });
+
+    // Opcional: Controlar reproducción y pausa desde el Centro de Control
+    navigator.mediaSession.setActionHandler('play', () => {
+        document.querySelector('audio').play();
+    });
+    navigator.mediaSession.setActionHandler('pause', () => {
+        document.querySelector('audio').pause();
+    });
+}
