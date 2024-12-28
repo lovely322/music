@@ -35,8 +35,8 @@ if ('mediaSession' in navigator) {
         artist: 'Artista',
         album: 'Álbum',
         artwork: [
-            { src: 'Sin título-1.png', sizes: '192x192', type: 'image/png' },
-            { src: 'Sin título-1.png', sizes: '512x512', type: 'image/png' }
+            { src: 'favicon.png', sizes: '192x192', type: 'image/png' },
+            { src: 'favicon.png', sizes: '512x512', type: 'image/png' }
         ]
     });
 
