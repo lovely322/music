@@ -1,6 +1,6 @@
 window.addEventListener('load', iniciarReproductor);
 
-let idFrame, listadoCanciones = ['Reik - Sabes','Camila — Todo Cambió','Felix Jaehn - Aint Nobody (Loves Me Better) ft. Jasmine Thompson','Michael Jackson - Rock With You','Isabel LaRosa - im yours','The 1975 - Robbers','Bad Bunny (ft. Bomba Estéreo) - Ojitos Lindos'];
+let idFrame, listadoCanciones = ['Reik - Sabes','The Weeknd - Call Out My Name','The Weeknd - All Day Love','Chase Atlantic - Run Away','The Weeknd - Die For You','Roxette -It Must Have Been Love','Bryan Adams - Heaven','Roxette - Listen to Your Heart','Camila — Todo Cambió','Felix Jaehn - Aint Nobody (Loves Me Better) ft. Jasmine Thompson','Michael Jackson - Rock With You','Isabel LaRosa - im yours','The 1975 - Robbers','Bad Bunny (ft. Bomba Estéreo) - Ojitos Lindos'];
 let icono = [], uris = {musica: 'Musica/', caratula: 'Caratulas/'}, reproduciendo = 0;
 let cancion = {
   audio: new Audio(),
