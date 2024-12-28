@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 if ('mediaSession' in navigator) {
     navigator.mediaSession.metadata = new MediaMetadata({
-        title: 'Título de la canción',
-        artist: 'Artista',
+        title: 'ForNella',
+        artist: 'Diego',
         album: 'Álbum',
         artwork: [
             { src: 'favicon.png', sizes: '192x192', type: 'image/png' },
