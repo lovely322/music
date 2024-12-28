@@ -20,3 +20,12 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+document.addEventListener("DOMContentLoaded", () => {
+  const video = document.querySelector("video");
+  if (video) {
+    video.muted = true; // Asegúrate de que esté silenciado
+    video.play().catch(error => {
+      console.error("Error al reproducir el video automáticamente:", error);
+    });
+  }
+});
